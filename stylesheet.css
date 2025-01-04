@@ -31,8 +31,8 @@ p {
 }
 
 .container {
-    min-height: 1000px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.603)), url(images/team.JPG);
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(49, 49, 49, 0.603)), url(images/cover.jpg);
     background-position:center;
     background-size: cover;
 
@@ -53,9 +53,17 @@ p {
 }
 
 .logo a {
-    color: rgb(255, 255, 255);
     text-decoration:none;
     font-family: "DM Serif Display" serif;
+    display: inline-block; /* Ensures the link behaves like a block for styling */
+    width: 250px; /* Set to the width of your image */
+    height: 69px; /* Set to the height of your image */
+    background-image: url("images/logo_white.png"); /* Path to your image */
+    background-size: cover; /* Scale the image to fit within the width/height */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image inside the element */
+    overflow: hidden; /* Prevents hidden text from affecting layout */
+    margin-top: 0px;
 }
 
 .toggle-button {
@@ -73,7 +81,7 @@ p {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color:#bbbbbb !important;
+    background-color:#a8a8a8 !important;
     border-radius: 10px;
     border: 1px solid #ffffff;
 }
@@ -215,28 +223,31 @@ nav ul li a {
 }
 
 .card1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/CDI.jpg);
 }
 .card2 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/CIC.jpg);
 }
 .card3 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house3.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/NTI.jpg);
 }
 .card4 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house4.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/pr.jpg);
 }
 .card5 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/SmFairview.jpg);
 }
 .card6 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/caloocan.jpg);
 }
 .card7 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house3.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/sanjose.jpg);
 }
 .card8 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house4.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/nova.jpg);
+}
+.card9 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/sanlazaro.jpg);
 }
 
 .card:hover {
@@ -318,7 +329,7 @@ nav ul li a {
 .contact-left {
     height: 100%;
     /* border: 1px solid blue; */
-    background: url(images/house-key.jpg) no-repeat center;
+    background: url(images/team.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -463,6 +474,8 @@ nav ul li a {
         display: flex;
     }
     
+    
+
     .navbar {
         align-items: flex-start;
         flex-direction: column;

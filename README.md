@@ -1,1 +1,1 @@
-Real-State-Website Project using HTML, CSS and Javascript
+Startegic-Website Project using HTML, CSS and Javascript
