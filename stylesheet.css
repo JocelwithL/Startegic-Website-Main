@@ -1,0 +1,598 @@
+body,html {
+    height:auto;
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'poppins', serif;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'poppins', serif;
+    font-weight: 600;
+}
+h2 {
+    font-family: 'poppins', serif;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: 'poppins', serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.container {
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.603)), url(images/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 8%;
+    font-family: "DM Serif Display" serif;
+    font-weight: 500;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration:underline;
+    font-family: "DM Serif Display" serif;
+}
+
+.toggle-button {
+    margin: 20px 20px 0px 0px;
+    position: absolute;
+    top: 20px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* .menu-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+    display: none;
+} */
+
+.navbar-links {
+    text-align: right;
+    flex: 1;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: rgb(153, 153, 153);
+    border-radius: 3px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    padding: 5% 8%;
+    /* border: 1px solid cyan; */
+}
+
+.col {
+    flex-basis: 50%;
+    /* border: 1px solid pink; */
+}
+
+.row .col1 h1 {
+    color: white;
+    font-size:50px;
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
+    line-height: 60px;
+}
+
+.row .col1 p {
+    color: white;
+    font-size: 15px;
+    /* border: 1px solid blue; */
+}
+
+.col2 {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.welcome-button {
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    background-color:beige;
+    padding: 12px;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 0px;
+
+
+}
+
+.house-content-container {
+    height: auto;
+    background-color: rgb(226, 226, 226);
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    padding-bottom: 60px;
+
+}
+
+.house-title {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.house-content-container .houses-descrip {
+    text-align: center;
+    padding: 0px 20% 0px 20%;
+}
+
+.card-container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4,300px);
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding:15px 5px 0px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: .4s;
+}
+
+.card1 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house1.jpg);
+}
+.card2 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house2.jpg);
+}
+.card3 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house3.jpg);
+}
+.card4 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house4.jpg);
+}
+.card5 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house1.jpg);
+}
+.card6 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house2.jpg);
+}
+.card7 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house3.jpg);
+}
+.card8 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/house4.jpg);
+}
+
+.card:hover {
+    transform:translateY(-10px)
+}
+
+.card-container .card h5 {
+    color: rgb(255, 255, 255);
+    padding: 10px 0px 0px 10px ;
+    margin-top: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 0px;
+}
+
+.card-container .card p {
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+}
+
+.about-page-container {
+    display: grid;
+    place-content: center;
+    height: auto;
+    background-color: rgb(65, 65, 65);
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.63)),url(images/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fixed-about-con {
+    display: grid;
+    padding: 5%;
+    /* border: 1px solid red; */
+    max-width: 1080px;
+}
+
+.about-content {
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.about-content h2{
+    font-weight: 500;
+}
+
+/* CONTACT STYLES */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(228, 228, 228, 0.452);
+    /* border: 1px solid red; */
+}
+
+.contact-box { 
+    display: grid;
+    grid-template-columns:300px 500px;
+    grid-template-rows: 400px;
+    place-content: center;
+    text-align: center;
+    background-color: #fff;
+    /* border: 1px solid purple; */
+    box-shadow: 0px 0px 19px 5px rgba(116, 116, 116, 0.377);
+
+}
+
+.contact-left {
+    height: 100%;
+    /* border: 1px solid blue; */
+    background: url(images/house-key.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.contact-right {
+    padding: 25px 40px;
+    /* border: 1px solid red; */
+    
+}
+
+.contact-right h2 {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 15px 10px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.contact-right h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(20, 124, 243);
+    height: 3px;
+    width: 50%;
+    border-radius: 2px;
+
+
+}
+
+.contact-field {
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(230, 230, 230, 0.466);
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-family:"Poppins" sans-serif;
+    transition: .3s;
+    outline: none;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.contact-field:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.contact-field:focus {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.contact-area {
+    min-height: 100px;
+    font-family: "Poppins" sans-serif;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+    font-family: "Poppins" sans-serif;
+    background-color: rgb(20, 124, 243);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 3px;
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: rgb(2, 83, 175);
+}
+
+.footer {
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: rgb(179, 179, 179);
+    background-color: rgb(49, 49, 49);
+}
+
+.page-up-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
+
+.page-up-btn a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: rgb(2, 83, 175);
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.page-up-btn a span {
+    color: white;
+    line-height: 39px;
+    font-size: 18px;
+}
+
+@media (max-width:1349px) {
+    .card-container {
+        grid-template-columns: repeat(3,250px);
+        grid-auto-rows: 250px;
+        grid-gap: 20px;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+
+
+
+@media (max-width:899px) {
+
+
+    .col1 {
+        flex: 2;
+        /* border: 1px solid pink; */
+    }
+
+    .col2 {
+        flex:1;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+    
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+        /* border: 1px solid blue; */
+    }
+
+    .navbar-links {
+        width: 100%;
+        /* border: 1px solid blue; */
+        display:none;
+        background-color: #192d47f3;
+        z-index: 1;
+    }
+
+    .navbar-links.active {
+        display: block;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+        /* border: 1px solid pink; */
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2,300px);
+        grid-auto-rows: 300px;
+        grid-gap: 20px;
+        /* border: 1px solid rebeccapurple; */
+    }
+    
+    .card {
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin:0px;
+        background-position: center;
+        background-size: cover;
+        transition: .4s;
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: 210px;
+        margin: 0px 30px;
+    }
+
+    .contact-left {
+        height: 200px;
+    }
+    
+}
+
+@media(max-width: 700px) {
+    .card {
+        width: 220px;
+        height: 220px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2,220px);
+        grid-auto-rows: 220px;
+    }
+}
+
+@media (max-width: 520px) {
+
+   .container {
+    min-height: 600px;
+   }
+
+    .row {
+        /* border: 1px solid red; */
+        display: block;
+    }
+
+
+
+    
+    .row .col h1 {
+        color: rgb(255, 255, 255);
+        font-size:40px;
+        /* border: 1px solid red; */
+    }
+    
+    .row .col p {
+        color: white;
+        font-size: 15px;
+        /* border: 1px solid blue; */
+    }
+    
+    .welcome-button {
+        width: 150px;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1,250px);
+        grid-auto-rows: 250px;
+    }
+
+    .house-title {
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 30px;
+        font-size: 27px;
+    }
+    
+    .house-content-container .houses-descrip {
+        text-align: center;
+        padding: 0px 5% 20px 5%;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
