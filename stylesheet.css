@@ -34,7 +34,7 @@ p {
     min-height: 700px;
     filter: none;
     opacity: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(49, 49, 49, 0.603)), url(images/cover.jpg);
+    background-image: linear-gradient(rgba(25, 25, 25, 0.692),rgba(49, 49, 49, 0.603)), url(images/cover.jpg);
     background-position:center;
     background-size: cover;
 
