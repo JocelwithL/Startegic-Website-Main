@@ -7,7 +7,7 @@ body,html {
 
 h1 {
     font-family: 'poppins', serif;
-    font-weight: 700;
+    font-weight: 701;
 }
 
 h5 {
@@ -201,25 +201,27 @@ nav ul li a {
 }
 
 .card-container {
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(4,300px);
-    grid-auto-rows: 300px;
-    grid-gap: 20px;
-    /* border: 1px solid rebeccapurple; */
+    display: flex; /* Change from grid to flex for horizontal layout */
+    flex-wrap: nowrap; /* Prevent the items from wrapping to the next line */
+    gap: 20px; /* Add space between the cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px; /* Optional: add padding around the container */
+    scroll-snap-type: x mandatory; /* Enable snap-to-grid behavior */
 }
 
 .card {
-    width: 300px;
-    height: 300px;
-    /* border: 1px solid red; */
+    flex: 0 0 auto; /* Prevent the cards from shrinking or expanding */
+    width: 300px; /* Fixed width for each card */
+    height: 300px; /* Fixed height for each card */
     border-radius: 10px;
-    padding:15px 5px 0px 5px;
+    padding: 15px 5px 0px 5px;
     box-sizing: border-box;
     cursor: pointer;
     background-position: center;
     background-size: cover;
     transition: .4s;
+    scroll-snap-align: start; /* Ensure each card snaps into place when scrolling */
+    margin-left: 20px;
 }
 
 .card1 {
@@ -441,19 +443,7 @@ nav ul li a {
     font-size: 18px;
 }
 
-@media (max-width:1349px) {
-    .card-container {
-        grid-template-columns: repeat(3,250px);
-        grid-auto-rows: 250px;
-        grid-gap: 20px;
-    }
 
-    .card {
-        width: 250px;
-        height: 250px;
-    }
-    
-}
 
 
 
@@ -509,24 +499,18 @@ nav ul li a {
     }
 
     .card-container {
-        display: grid;
-        grid-template-columns: repeat(2,300px);
-        grid-auto-rows: 300px;
-        grid-gap: 20px;
-        /* border: 1px solid rebeccapurple; */
+        display: flex; /* Change grid to flex for horizontal scrolling */
+        flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 15px; /* Add spacing between cards */
+        padding: 10px; /* Add padding for better layout */
     }
-    
+
     .card {
-        width: 300px;
-        height: 300px;
-        /* border: 1px solid red; */
-        border-radius: 10px;
-        box-sizing: border-box;
-        cursor: pointer;
-        margin:0px;
-        background-position: center;
-        background-size: cover;
-        transition: .4s;
+        flex: 0 0 auto; /* Prevent shrinking and ensure fixed width */
+        width: 250px; /* Set a fixed width for each card */
+        height: 250px; /* Adjust height automatically */
+        margin-left: 20px;
     }
 
     .contact-box {
@@ -543,14 +527,28 @@ nav ul li a {
 
 @media(max-width: 700px) {
     .card {
-        width: 220px;
-        height: 220px;
+        flex: 0 0 auto; /* Prevent cards from stretching */
+        width: 220px; /* Smaller width for responsiveness */
+        height: 220px; /* Adjust height to match width */
+        margin-left: 20px;
     }
 
     .card-container {
-        display: grid;
-        grid-template-columns: repeat(2,220px);
-        grid-auto-rows: 220px;
+        display: flex; /* Ensure flexbox layout */
+        flex-wrap: nowrap; /* Prevent wrapping of cards */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 15px; /* Add spacing between cards */
+        padding: 10px; /* Prevent cards from appearing cropped */
+        scroll-behavior: smooth; /* Smooth horizontal scroll */
+    }
+
+    .card-container::-webkit-scrollbar {
+        height: 6px; /* Optional: Customize scrollbar height */
+    }
+
+    .card-container::-webkit-scrollbar-thumb {
+        background: #888; /* Optional: Customize scrollbar color */
+        border-radius: 10px;
     }
 }
 
@@ -585,14 +583,19 @@ nav ul li a {
     }
 
     .card {
-        width: 250px;
+        flex: 0 0 auto; /* Prevent cards from stretching */
+        width: 250px; /* Adjust card size for smaller screens */
         height: 250px;
+        margin-left: 20px;
     }
 
     .card-container {
-        display: grid;
-        grid-template-columns: repeat(1,250px);
-        grid-auto-rows: 250px;
+        display: flex; /* Flexbox layout for horizontal scrolling */
+        flex-wrap: nowrap; /* Prevent cards from wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 15px; /* Add spacing between cards */
+        padding: 10px; /* Add padding to avoid cropped cards */
+        scroll-behavior: smooth; /* Enable smooth scrolling */
     }
 
     .house-title {
