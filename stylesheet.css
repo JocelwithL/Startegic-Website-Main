@@ -32,6 +32,8 @@ p {
 
 .container {
     min-height: 700px;
+    filter: none;
+    opacity: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(49, 49, 49, 0.603)), url(images/cover.jpg);
     background-position:center;
     background-size: cover;
@@ -132,8 +134,10 @@ nav ul li a {
     /* border: 1px solid pink; */
 }
 
+
+
 .row .col1 h1 {
-    color: white;
+    color: black;
     font-size:50px;
     /* border: 1px solid red; */
     margin-bottom: 0px;
@@ -166,9 +170,8 @@ nav ul li a {
 
 .welcome-button {
     width: 180px;
-    color: black;
     font-size: 12px;
-    background-color:beige;
+    background-color:rgb(132, 0, 0);
     padding: 12px;
     border: 0px;
     border-radius: 20px;
