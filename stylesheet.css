@@ -224,6 +224,34 @@ nav ul li a {
     margin-left: 20px;
 }
 
+/* Customizing the scrollbar */
+.card-container::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the draggable part (thumb) */
+    border-radius: 10px; /* Round the corners of the thumb */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when the thumb is hovered over */
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light color for the track */
+    border-radius: 10px; /* Round the corners of the track */
+}
+
+.card-container::-webkit-scrollbar-track:hover {
+    background: #e0e0e0; /* Slightly darker color when the track is hovered over */
+}
+
+.card-container::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Color of the bottom-right corner where the horizontal and vertical scrollbars meet */
+}
+
 .card1 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/CDI.jpg);
 }
@@ -234,13 +262,13 @@ nav ul li a {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/NTI.jpg);
 }
 .card4 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/pr.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/PR.jpg);
 }
 .card5 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/SmFairview.jpg);
 }
 .card6 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/caloocan.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/Caloocan.jpg);
 }
 .card7 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.205)), url(images/sanjose.jpg);
@@ -331,7 +359,7 @@ nav ul li a {
 .contact-left {
     height: 100%;
     /* border: 1px solid blue; */
-    background: url(images/team.jpg) no-repeat center;
+    background: url(images/team.JPG) no-repeat center;
     background-size: cover;
 }
 
